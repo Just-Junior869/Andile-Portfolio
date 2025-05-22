@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andile Mabida</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+  <div class="hero-header">
+    <div class="wrapper">
+      <header>
+        <div class="logo">
+          <i class="fa-solid fa-a"></i>
+          <div class="logo-text">Andile Junior</div>
+        </div>
+        <nav>
+          <div class="togglebtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="navlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="container">
+        <div class="hero-pic">
+          <img src="images/p2.jpg" alt="profile">
+        </div>
+        <div class="hero-text">
+          <h5>Hi, I'm <span class="input">Frontend Developer</span></h5>
+          <h1>Andile Junior</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Id dicta maiores, non nisi velit sint eaque quas recusandae
+            sequi mollitia odio cumque exercitationem magni facilis distinctio
+            nihil consequatur tenetur! Recusandae!
+          </p>
+
+          <div class="btn-group">
+            <a href="#" class="btn active">Download CV</a>
+            <a href="#" class="btn">Contact</a>
+          </div>
+          <div class="social">
+            <a href="https://www.facebook.com/profile.php?id=61576819071197"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/andile-mabida-209644358"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/just_junior869/?next=%2F&hl=en"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/27813912979?text=Hello"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://za.pinterest.com/sokhelaandile416/_profile/"><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+  <script>
+    var togglebtn = document.querySelector(".togglebtn");
+    var nav = document.querySelector(".navlinks");
+    var links = document.querySelector(".navlinks li")
+
+    togglebtn.addEventListener("click", function () {
+      this.classList.toggle("click");
+      nav.classList.toggle("open");
+    })
+
+    var typed = new Typed(".input", {
+      strings: ["Frontend Developer", "UX Designer", "Web Developer"],
+      typedSpeed: 70,
+      backSpeed: 55,
+      loop: true
+    })
+  </script>
+</body>
+
+</html>
