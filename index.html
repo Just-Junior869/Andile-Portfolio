@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Andile Mabida</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Andile Junior</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
@@ -15,45 +16,61 @@
       <header>
         <div class="logo">
           <i class="fa-solid fa-a"></i>
-          <div class="logo-text">Andile Junior</div>
+          <div class="logo-text">Junior</div>
         </div>
         <nav>
           <div class="togglebtn">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
           </div>
-          <ul class="navlinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+          <div class="navlinks close">
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
         </nav>
       </header>
       <div class="container">
-        <div class="hero-pic">
-          <img src="images/p2.jpg" alt="profile">
-        </div>
         <div class="hero-text">
-          <h5>Hi, I'm <span class="input">Frontend Developer</span></h5>
-          <h1>Andile Junior</h1>
+          <div class="hero-headings">
+            <h5>Hi I'm </h5>
+            <h1>Junior</h1>
+            <span class="input"></span>
+          </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Id dicta maiores, non nisi velit sint eaque quas recusandae
-            sequi mollitia odio cumque exercitationem magni facilis distinctio
-            nihil consequatur tenetur! Recusandae!
+            A creative frontend developer and UX designer with a sharp eye for aesthetics,
+            a passion for photography, and a heart for teaching. I craft beautiful, user-friendly
+            digital experiences and capture moments through my lens, all while helping others
+            grow their skills.
           </p>
+          <div class="skill">
+            <i class="fa-brands fa-html5 fa-2x" style="color:#51271b;"></i>
+            <i class="fa-brands fa-css3 fa-2x" style="color:#14334a;"></i>
+            <i class="fa-brands fa-js fa-2x" style="color:#4f4a1e;"></i>
+            <i class="fa-brands fa-python fa-2x" style="color:#1f3140;"></i>
+            <i class="fa-brands fa-node fa-2x" style="color:#225122;"></i>
+          </div>
 
           <div class="btn-group">
-            <a href="#" class="btn active">Download CV</a>
-            <a href="#" class="btn">Contact</a>
+            <div class="main-btn">
+              <div class="btn-active"><a href="#">Download CV</a></div>
+              <div class="btn"><a href="contact.html">Contact</a></div>
+            </div>
+            <div class="more">
+              <div class="btn-2"><a href="home.html">See more <i class="fa-solid fa-arrow-right"></i></a></div>
+            </div>
           </div>
+
           <div class="social">
             <a href="https://www.facebook.com/profile.php?id=61576819071197"><i class="fa-brands fa-facebook"></i></a>
             <a href="https://www.linkedin.com/in/andile-mabida-209644358"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/just_junior869/?next=%2F&hl=en"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.instagram.com/just_junior869/?next=%2F&hl=en"><i
+                class="fa-brands fa-instagram"></i></a>
             <a href="https://wa.me/27813912979?text=Hello"><i class="fa-brands fa-whatsapp"></i></a>
             <a href="https://za.pinterest.com/sokhelaandile416/_profile/"><i class="fa-brands fa-pinterest"></i></a>
           </div>
@@ -61,24 +78,9 @@
       </div>
     </div>
   </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
-  <script>
-    var togglebtn = document.querySelector(".togglebtn");
-    var nav = document.querySelector(".navlinks");
-    var links = document.querySelector(".navlinks li")
-
-    togglebtn.addEventListener("click", function () {
-      this.classList.toggle("click");
-      nav.classList.toggle("open");
-    })
-
-    var typed = new Typed(".input", {
-      strings: ["Frontend Developer", "UX Designer", "Web Developer"],
-      typedSpeed: 70,
-      backSpeed: 55,
-      loop: true
-    })
-  </script>
+  <script src="script.js"></script>
 </body>
 
 </html>

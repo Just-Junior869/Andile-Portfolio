@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography & Editing Program - Tech2Craft Youth Academy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation (same as other pages) -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Tech2Craft</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Programs</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="software-development.html">Software Development</a></li>
+                            <li><a class="dropdown-item" href="rug-crafting.html">Rug Crafting</a></li>
+                            <li><a class="dropdown-item" href="fashion.html">Fashion</a></li>
+                            <li><a class="dropdown-item" href="phone-repair.html">Phone Repair</a></li>
+                            <li><a class="dropdown-item active" href="photography.html">Photography & Editing</a></li>
+                            <li><a class="dropdown-item" href="business.html">Business Management</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary donate-btn" href="donate.html">Donate</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-secondary join-btn" href="join.html">Join Program</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Program Hero Section -->
+    <header class="program-hero py-5">
+        <div class="container">
+            <div class="row align-items-center min-vh-50">
+                <div class="col-lg-6">
+                    <h1>Photography & Editing Program</h1>
+                    <p class="lead">Develop your creative vision and master the art of visual storytelling through photography and digital editing.</p>
+                    <div class="program-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-clock"></i>
+                            <span>4 Months</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-users"></i>
+                            <span>15 Students per Cohort</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-certificate"></i>
+                            <span>Creative Certification</span>
+                        </div>
+                    </div>
+                    <a href="join.html" class="btn btn-primary btn-lg mt-4">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Program Overview -->
+    <section class="program-overview py-5" style="background-color: var(--cetacean-blue);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2>Program Overview</h2>
+                    <p>Our Photography & Editing program combines technical camera skills with advanced digital editing techniques. Learn from professional photographers and develop the skills needed for a successful career in visual media.</p>
+                    
+                    <h3 class="mt-4">What You'll Learn</h3>
+                    <div class="row g-4 mt-2">
+                        <div class="col-md-6">
+                            <div class="learning-card">
+                                <i class="fas fa-camera"></i>
+                                <h4>Photography Skills</h4>
+                                <ul>
+                                    <li>Camera Operations</li>
+                                    <li>Composition Techniques</li>
+                                    <li>Lighting Setup</li>
+                                    <li>Studio Photography</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="learning-card">
+                                <i class="fas fa-edit"></i>
+                                <h4>Digital Editing</h4>
+                                <ul>
+                                    <li>Adobe Photoshop</li>
+                                    <li>Lightroom Workflow</li>
+                                    <li>Color Correction</li>
+                                    <li>Digital Retouching</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="program-info-card">
+                        <h3>Program Details</h3>
+                        <ul class="program-details-list">
+                            <li><i class="fas fa-calendar"></i> Next Intake: April 2024</li>
+                            <li><i class="fas fa-clock"></i> Duration: 4 months</li>
+                            <li><i class="fas fa-user-clock"></i> Schedule: Mon-Thu, 10am-3pm</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Location: On-campus & Field</li>
+                            <li><i class="fas fa-dollar-sign"></i> Tuition: Contact for details</li>
+                        </ul>
+                        <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#inquiryModal">Request Information</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum -->
+    <section class="curriculum py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Curriculum</h2>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="accordion" id="curriculumAccordion">
+                        <!-- Module 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#module1">
+                                    Module 1: Photography Fundamentals
+                                </button>
+                            </h2>
+                            <div id="module1" class="accordion-collapse collapse show" data-bs-parent="#curriculumAccordion">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Camera Basics and Settings</li>
+                                        <li>Composition and Framing</li>
+                                        <li>Natural and Artificial Lighting</li>
+                                        <li>Portrait Photography</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Module 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#module2">
+                                    Module 2: Advanced Photography
+                                </button>
+                            </h2>
+                            <div id="module2" class="accordion-collapse collapse" data-bs-parent="#curriculumAccordion">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Studio Lighting Techniques</li>
+                                        <li>Commercial Photography</li>
+                                        <li>Event Photography</li>
+                                        <li>Outdoor and Location Shoots</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Module 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#module3">
+                                    Module 3: Digital Editing & Business
+                                </button>
+                            </h2>
+                            <div id="module3" class="accordion-collapse collapse" data-bs-parent="#curriculumAccordion">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Adobe Photoshop & Lightroom</li>
+                                        <li>Photo Retouching</li>
+                                        <li>Business Development</li>
+                                        <li>Portfolio Building</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Opportunities -->
+    <section class="career-opportunities py-5" style="background-color: var(--cetacean-blue);">
+        <div class="container">
+            <h2 class="text-center mb-5">Career Opportunities</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="career-card">
+                        <i class="fas fa-camera-retro"></i>
+                        <h3>Professional Photographer</h3>
+                        <p>Work as a freelance photographer or with studios and agencies.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="career-card">
+                        <i class="fas fa-laptop"></i>
+                        <h3>Photo Editor</h3>
+                        <p>Edit and retouch photos for magazines, websites, and social media.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="career-card">
+                        <i class="fas fa-image"></i>
+                        <h3>Content Creator</h3>
+                        <p>Create visual content for brands and social media platforms.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories 
+    <section class="success-stories py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Success Stories</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <img src="images/testimonials/photo1.jpg" alt="Graduate" class="rounded-circle mb-3">
+                        <h4>Rachel Kim</h4>
+                        <p class="position">Wedding Photographer</p>
+                        <p class="quote">"The program helped me turn my passion for photography into a thriving wedding photography business. The technical and business skills were invaluable."</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <img src="images/testimonials/photo2.jpg" alt="Graduate" class="rounded-circle mb-3">
+                        <h4>Tom Anderson</h4>
+                        <p class="position">Commercial Photo Editor</p>
+                        <p class="quote">"I now work with major brands editing their product photography. The editing skills I learned in the program set me apart in the industry."</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <img src="images/testimonials/photo3.jpg" alt="Graduate" class="rounded-circle mb-3">
+                        <h4>Maya Patel</h4>
+                        <p class="position">Social Media Content Creator</p>
+                        <p class="quote">"The program gave me the skills to create stunning visual content. I now manage social media for multiple lifestyle brands."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as other pages) -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Tech2Craft Youth Academy</h4>
+                    <p>Empowering youth through practical skills and creative education.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="donate.html">Support Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@tech2craft.org</p>
+                    <p>Phone: 0813912979</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Send Message</button>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2024 Tech2Craft Youth Academy. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Program Inquiry Modal -->
+    <div class="modal fade" id="inquiryModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Request Program Information</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="inquiryForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Your Phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Your Questions" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Modal (same as other pages) -->
+    <div class="modal fade" id="contactModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contact Us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Form handling for program inquiry
+        document.getElementById('inquiryForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Here you would typically send the form data to your backend
+            const formData = new FormData(this);
+            console.log('Inquiry submitted:', Object.fromEntries(formData));
+            
+            // Show success message
+            this.innerHTML = `
+                <div class="text-center">
+                    <i class="fas fa-check-circle text-success" style="font-size: 3rem;"></i>
+                    <h4 class="mt-3">Request Submitted Successfully!</h4>
+                    <p>Thank you for your interest in our Photography & Editing program. We will contact you soon with more information.</p>
+                </div>
+            `;
+            
+            // Close modal after 3 seconds
+            setTimeout(() => {
+                const modal = bootstrap.Modal.getInstance(document.getElementById('inquiryModal'));
+                modal.hide();
+                this.reset();
+            }, 3000);
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Repair Program - Tech2Craft Youth Academy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation (same as other pages) -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Tech2Craft</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Programs</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="software-development.html">Software Development</a></li>
+                            <li><a class="dropdown-item" href="rug-crafting.html">Rug Crafting</a></li>
+                            <li><a class="dropdown-item" href="fashion.html">Fashion</a></li>
+                            <li><a class="dropdown-item active" href="phone-repair.html">Phone Repair</a></li>
+                            <li><a class="dropdown-item" href="photography.html">Photography & Editing</a></li>
+                            <li><a class="dropdown-item" href="business.html">Business Management</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary donate-btn" href="donate.html">Donate</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-secondary join-btn" href="join.html">Join Program</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Program Hero Section -->
+    <header class="program-hero py-5">
+        <div class="container">
+            <div class="row align-items-center min-vh-50">
+                <div class="col-lg-6">
+                    <h1>Phone Repair Program</h1>
+                    <p class="lead">Master the art of mobile device repair and build a career in the growing tech repair industry.</p>
+                    <div class="program-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-clock"></i>
+                            <span>3 Months</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-users"></i>
+                            <span>12 Students per Cohort</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-certificate"></i>
+                            <span>Technical Certification</span>
+                        </div>
+                    </div>
+                    <a href="join.html" class="btn btn-primary btn-lg mt-4">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Program Overview -->
+    <section class="program-overview py-5" style="background-color: var(--cetacean-blue);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2>Program Overview</h2>
+                    <p>Our Phone Repair program provides comprehensive training in mobile device repair and maintenance. Learn from experienced technicians and gain practical skills in diagnosing and fixing common smartphone issues.</p>
+                    
+                    <h3 class="mt-4">What You'll Learn</h3>
+                    <div class="row g-4 mt-2">
+                        <div class="col-md-6">
+                            <div class="learning-card">
+                                <i class="fas fa-mobile-alt"></i>
+                                <h4>Technical Skills</h4>
+                                <ul>
+                                    <li>Hardware Diagnostics</li>
+                                    <li>Screen Replacement</li>
+                                    <li>Battery Service</li>
+                                    <li>Component Repair</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="learning-card">
+                                <i class="fas fa-tools"></i>
+                                <h4>Business Skills</h4>
+                                <ul>
+                                    <li>Customer Service</li>
+                                    <li>Repair Estimation</li>
+                                    <li>Inventory Management</li>
+                                    <li>Shop Operations</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="program-info-card">
+                        <h3>Program Details</h3>
+                        <ul class="program-details-list">
+                            <li><i class="fas fa-calendar"></i> Next Intake: May 2024</li>
+                            <li><i class="fas fa-clock"></i> Duration: 3 months</li>
+                            <li><i class="fas fa-user-clock"></i> Schedule: Mon-Fri, 9am-1pm</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Location: On-campus</li>
+                            <li><i class="fas fa-dollar-sign"></i> Tuition: Contact for details</li>
+                        </ul>
+                        <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#inquiryModal">Request Information</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum -->
+    <section class="curriculum py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Curriculum</h2>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="accordion" id="curriculumAccordion">
+                        <!-- Module 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#module1">
+                                    Module 1: Phone Repair Basics
+                                </button>
+                            </h2>
+                            <div id="module1" class="accordion-collapse collapse show" data-bs-parent="#curriculumAccordion">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Safety and Tool Handling</li>
+                                        <li>Phone Components and Architecture</li>
+                                        <li>Basic Troubleshooting</li>
+                                        <li>Common Repair Procedures</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Module 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#module2">
+                                    Module 2: Advanced Repairs
+                                </button>
+                            </h2>
+                            <div id="module2" class="accordion-collapse collapse" data-bs-parent="#curriculumAccordion">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Logic Board Repair</li>
+                                        <li>Water Damage Recovery</li>
+                                        <li>Data Recovery</li>
+                                        <li>Software Issues</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Module 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#module3">
+                                    Module 3: Business Operations
+                                </button>
+                            </h2>
+                            <div id="module3" class="accordion-collapse collapse" data-bs-parent="#curriculumAccordion">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Customer Relations</li>
+                                        <li>Repair Shop Management</li>
+                                        <li>Parts Sourcing</li>
+                                        <li>Business Planning</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Opportunities -->
+    <section class="career-opportunities py-5" style="background-color: var(--cetacean-blue);">
+        <div class="container">
+            <h2 class="text-center mb-5">Career Opportunities</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="career-card">
+                        <i class="fas fa-store-alt"></i>
+                        <h3>Repair Shop Owner</h3>
+                        <p>Start and manage your own mobile device repair business.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="career-card">
+                        <i class="fas fa-tools"></i>
+                        <h3>Phone Repair Technician</h3>
+                        <p>Work with established repair shops or electronics retailers.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="career-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Mobile Device Specialist</h3>
+                        <p>Provide technical support and repair services for organizations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories 
+    <section class="success-stories py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Success Stories</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <img src="images/testimonials/repair1.jpg" alt="Graduate" class="rounded-circle mb-3">
+                        <h4>Alex Rodriguez</h4>
+                        <p class="position">Owner of Quick Fix Mobile</p>
+                        <p class="quote">"The program gave me the technical skills and business knowledge to open my own successful repair shop. Now I'm helping others learn the trade."</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <img src="images/testimonials/repair2.jpg" alt="Graduate" class="rounded-circle mb-3">
+                        <h4>Samantha Lee</h4>
+                        <p class="position">Lead Technician at TechCare</p>
+                        <p class="quote">"I went from knowing nothing about phone repair to managing a team of technicians. The hands-on training was invaluable."</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <img src="images/testimonials/repair3.jpg" alt="Graduate" class="rounded-circle mb-3">
+                        <h4>Marcus Johnson</h4>
+                        <p class="position">Mobile Device Specialist</p>
+                        <p class="quote">"The program opened doors to a rewarding career in tech repair. I now work with major corporations maintaining their mobile fleets."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as other pages) -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Tech2Craft Youth Academy</h4>
+                    <p>Empowering youth through practical skills and creative education.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="donate.html">Support Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@tech2craft.org</p>
+                    <p>Phone: 0813912979</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Send Message</button>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2024 Tech2Craft Youth Academy. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Program Inquiry Modal -->
+    <div class="modal fade" id="inquiryModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Request Program Information</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="inquiryForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Your Phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Your Questions" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Modal (same as other pages) -->
+    <div class="modal fade" id="contactModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contact Us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Form handling for program inquiry
+        document.getElementById('inquiryForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Here you would typically send the form data to your backend
+            const formData = new FormData(this);
+            console.log('Inquiry submitted:', Object.fromEntries(formData));
+            
+            // Show success message
+            this.innerHTML = `
+                <div class="text-center">
+                    <i class="fas fa-check-circle text-success" style="font-size: 3rem;"></i>
+                    <h4 class="mt-3">Request Submitted Successfully!</h4>
+                    <p>Thank you for your interest in our Phone Repair program. We will contact you soon with more information.</p>
+                </div>
+            `;
+            
+            // Close modal after 3 seconds
+            setTimeout(() => {
+                const modal = bootstrap.Modal.getInstance(document.getElementById('inquiryModal'));
+                modal.hide();
+                this.reset();
+            }, 3000);
+        });
+    </script>
+</body>
+</html> 

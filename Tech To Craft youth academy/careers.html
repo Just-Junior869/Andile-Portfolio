@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - Tech2Craft Youth Academy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Tech2Craft</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Programs</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="software-development.html">Software Development</a></li>
+                            <li><a class="dropdown-item" href="rug-crafting.html">Rug Crafting</a></li>
+                            <li><a class="dropdown-item" href="fashion.html">Fashion</a></li>
+                            <li><a class="dropdown-item" href="phone-repair.html">Phone Repair</a></li>
+                            <li><a class="dropdown-item" href="photography.html">Photography & Editing</a></li>
+                            <li><a class="dropdown-item" href="business.html">Business Management</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="careers.html">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary donate-btn" href="donate.html">Donate</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-secondary join-btn" href="join.html">Join Program</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="careers-hero py-5" style="background-color: var(--oxford-blue);">
+        <div class="container">
+            <div class="row align-items-center min-vh-50">
+                <div class="col-lg-8 mx-auto text-center text-white">
+                    <h1>Join Our Team</h1>
+                    <p class="lead">Be part of our mission to empower youth through practical skills and creative education.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Why Work With Us -->
+    <section class="why-work-with-us py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Why Work With Us?</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="benefit-card text-center p-4">
+                        <i class="fas fa-heart fa-3x mb-3 text-primary"></i>
+                        <h3>Meaningful Impact</h3>
+                        <p>Make a difference in young lives by helping them develop valuable skills for their future.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-card text-center p-4">
+                        <i class="fas fa-users fa-3x mb-3 text-primary"></i>
+                        <h3>Collaborative Culture</h3>
+                        <p>Work with passionate educators and industry professionals in a supportive environment.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-card text-center p-4">
+                        <i class="fas fa-rocket fa-3x mb-3 text-primary"></i>
+                        <h3>Growth Opportunities</h3>
+                        <p>Develop your skills and advance your career with professional development support.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Openings -->
+    <section class="current-openings py-5" style="background-color: var(--cetacean-blue);">
+        <div class="container">
+            <h2 class="text-center text-white mb-5">Current Openings</h2>
+            <div class="row g-4">
+                <!-- Teaching Positions -->
+                <div class="col-lg-6">
+                    <div class="position-category mb-4">
+                        <h3 class="text-white mb-4">Teaching Positions</h3>
+                        <div class="job-card bg-white p-4 rounded mb-3">
+                            <h4>Software Development Instructor</h4>
+                            <p class="text-muted">Full-time | On-campus</p>
+                            <p>Lead our software development program and help students master programming skills.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#applyModal" data-position="Software Development Instructor">Apply Now</button>
+                        </div>
+                        <div class="job-card bg-white p-4 rounded mb-3">
+                            <h4>Fashion Design Instructor</h4>
+                            <p class="text-muted">Part-time | On-campus</p>
+                            <p>Guide students in developing their fashion design and garment construction skills.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#applyModal" data-position="Fashion Design Instructor">Apply Now</button>
+                        </div>
+                        <div class="job-card bg-white p-4 rounded">
+                            <h4>Photography & Editing Instructor</h4>
+                            <p class="text-muted">Part-time | Hybrid</p>
+                            <p>Teach photography techniques and digital editing skills to aspiring photographers.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#applyModal" data-position="Photography & Editing Instructor">Apply Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Administrative Positions -->
+                <div class="col-lg-6">
+                    <div class="position-category mb-4">
+                        <h3 class="text-white mb-4">Administrative Positions</h3>
+                        <div class="job-card bg-white p-4 rounded mb-3">
+                            <h4>Student Success Coordinator</h4>
+                            <p class="text-muted">Full-time | On-campus</p>
+                            <p>Support student progress and coordinate program activities across departments.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#applyModal" data-position="Student Success Coordinator">Apply Now</button>
+                        </div>
+                        <div class="job-card bg-white p-4 rounded mb-3">
+                            <h4>Marketing & Communications Manager</h4>
+                            <p class="text-muted">Full-time | Hybrid</p>
+                            <p>Lead our marketing efforts and manage communications across all channels.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#applyModal" data-position="Marketing & Communications Manager">Apply Now</button>
+                        </div>
+                        <div class="job-card bg-white p-4 rounded">
+                            <h4>Administrative Assistant</h4>
+                            <p class="text-muted">Full-time | On-campus</p>
+                            <p>Provide administrative support to ensure smooth operations of our programs.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#applyModal" data-position="Administrative Assistant">Apply Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Employee Benefits -->
+    <section class="employee-benefits py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Employee Benefits</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="benefit-item text-center">
+                        <i class="fas fa-medkit fa-2x mb-3 text-primary"></i>
+                        <h4>Health Insurance</h4>
+                        <p>Comprehensive medical, dental, and vision coverage.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="benefit-item text-center">
+                        <i class="fas fa-graduation-cap fa-2x mb-3 text-primary"></i>
+                        <h4>Professional Development</h4>
+                        <p>Training and certification support.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="benefit-item text-center">
+                        <i class="fas fa-umbrella-beach fa-2x mb-3 text-primary"></i>
+                        <h4>Paid Time Off</h4>
+                        <p>Generous vacation and sick leave policy.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="benefit-item text-center">
+                        <i class="fas fa-piggy-bank fa-2x mb-3 text-primary"></i>
+                        <h4>401(k) Plan</h4>
+                        <p>Retirement savings with company match.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Tech2Craft Youth Academy</h4>
+                    <p>Empowering youth through practical skills and creative education.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="donate.html">Support Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@tech2craft.org</p>
+                    <p>Phone: 0813912979</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Send Message</button>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2024 Tech2Craft Youth Academy. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Job Application Modal -->
+    <div class="modal fade" id="applyModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Apply for <span id="positionTitle"></span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="applicationForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" placeholder="First Name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email Address" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Phone Number" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Cover Letter" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Resume/CV</label>
+                            <input type="file" class="form-control" accept=".pdf,.doc,.docx" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Portfolio (if applicable)</label>
+                            <input type="file" class="form-control" accept=".pdf,.zip">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Application</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contact Us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Update position title in application modal
+        const applyModal = document.getElementById('applyModal');
+        applyModal.addEventListener('show.bs.modal', function (event) {
+            const button = event.relatedTarget;
+            const position = button.getAttribute('data-position');
+            const positionTitle = this.querySelector('#positionTitle');
+            positionTitle.textContent = position;
+        });
+
+        // Handle application form submission
+        document.getElementById('applicationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Here you would typically send the form data to your backend
+            const formData = new FormData(this);
+            console.log('Application submitted:', Object.fromEntries(formData));
+            
+            // Show success message
+            this.innerHTML = `
+                <div class="text-center">
+                    <i class="fas fa-check-circle text-success" style="font-size: 3rem;"></i>
+                    <h4 class="mt-3">Application Submitted Successfully!</h4>
+                    <p>Thank you for your interest in joining our team. We will review your application and contact you soon.</p>
+                </div>
+            `;
+            
+            // Close modal after 3 seconds
+            setTimeout(() => {
+                const modal = bootstrap.Modal.getInstance(document.getElementById('applyModal'));
+                modal.hide();
+                this.reset();
+            }, 3000);
+        });
+
+        // Handle contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Here you would typically send the form data to your backend
+            const formData = new FormData(this);
+            console.log('Contact form submitted:', Object.fromEntries(formData));
+            
+            // Show success message
+            this.innerHTML = `
+                <div class="text-center">
+                    <i class="fas fa-check-circle text-success" style="font-size: 3rem;"></i>
+                    <h4 class="mt-3">Message Sent Successfully!</h4>
+                    <p>Thank you for contacting us. We will get back to you soon.</p>
+                </div>
+            `;
+            
+            // Close modal after 3 seconds
+            setTimeout(() => {
+                const modal = bootstrap.Modal.getInstance(document.getElementById('contactModal'));
+                modal.hide();
+                this.reset();
+            }, 3000);
+        });
+    </script>
+</body>
+</html> 

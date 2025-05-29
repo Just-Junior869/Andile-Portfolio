@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Tech2Craft Youth Academy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-graduation-cap me-2"></i>Tech2Craft
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Programs</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="software-development.html">Software Development</a></li>
+                            <li><a class="dropdown-item" href="rug-crafting.html">Rug Crafting</a></li>
+                            <li><a class="dropdown-item" href="fashion.html">Fashion</a></li>
+                            <li><a class="dropdown-item" href="phone-repair.html">Phone Repair</a></li>
+                            <li><a class="dropdown-item" href="photography.html">Photography & Editing</a></li>
+                            <li><a class="dropdown-item" href="business.html">Business Management</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary donate-btn active ms-2" href="donate.html">Donate</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-secondary join-btn ms-2" href="join.html">Join Program</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Donation Hero Section -->
+    <header class="donation-hero py-5">
+        <div class="container">
+            <div class="row align-items-center min-vh-50">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold text-white mb-4">Support Our Mission</h1>
+                    <p class="lead mb-0">Your donation helps us empower youth through education and skill development. Together, we can create more opportunities for the next generation.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Donation Impact Section -->
+    <section class="donation-impact py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Your Impact</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="impact-card">
+                        <i class="fas fa-laptop-code mb-4"></i>
+                        <h3 class="fw-bold mb-3">R850</h3>
+                        <p class="mb-0">Provides one student with essential learning materials for a month</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="impact-card">
+                        <i class="fas fa-tools mb-4"></i>
+                        <h3 class="fw-bold mb-3">R3,500</h3>
+                        <p class="mb-0">Supplies a complete toolkit for phone repair training</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="impact-card">
+                        <i class="fas fa-graduation-cap mb-4"></i>
+                        <h3 class="fw-bold mb-3">R8,500</h3>
+                        <p class="mb-0">Sponsors one student's complete program tuition</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Options -->
+    <section class="donation-options py-5" style="background-color: var(--cetacean-blue);">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Ways to Give</h2>
+            <div class="row g-4">
+                <!-- One-Time Donation -->
+                <div class="col-md-6">
+                    <div class="donation-form-card">
+                        <h3 class="fw-bold mb-4">One-Time Donation</h3>
+                        <form id="oneTimeDonationForm" class="donation-form needs-validation" novalidate>
+                            <div class="amount-buttons mb-4">
+                                <button type="button" class="btn btn-outline-primary amount-btn" data-amount="850">R850</button>
+                                <button type="button" class="btn btn-outline-primary amount-btn" data-amount="1700">R1,700</button>
+                                <button type="button" class="btn btn-outline-primary amount-btn" data-amount="3500">R3,500</button>
+                                <button type="button" class="btn btn-outline-primary amount-btn" data-amount="8500">R8,500</button>
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label">Custom Amount (ZAR)</label>
+                                <input type="number" class="form-control" placeholder="Enter amount" min="10" required>
+                                <div class="invalid-feedback">Please enter a valid amount (minimum R10)</div>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Donate Now</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Monthly Donation -->
+                <div class="col-md-6">
+                    <div class="donation-form-card">
+                        <h3 class="fw-bold mb-4">Monthly Donation</h3>
+                        <form id="monthlyDonationForm" class="donation-form needs-validation" novalidate>
+                            <div class="amount-buttons mb-4">
+                                <button type="button" class="btn btn-outline-primary amount-btn" data-amount="350">R350/mo</button>
+                                <button type="button" class="btn btn-outline-primary amount-btn" data-amount="850">R850/mo</button>
+                                <button type="button" class="btn btn-outline-primary amount-btn" data-amount="1700">R1,700/mo</button>
+                                <button type="button" class="btn btn-outline-primary amount-btn" data-amount="3500">R3,500/mo</button>
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label">Custom Monthly Amount (ZAR)</label>
+                                <input type="number" class="form-control" placeholder="Enter monthly amount" min="100" required>
+                                <div class="invalid-feedback">Please enter a valid amount (minimum R100)</div>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Become a Monthly Donor</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Ways to Support -->
+    <section class="other-support py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Other Ways to Support</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="support-card">
+                        <i class="fas fa-handshake mb-4"></i>
+                        <h3 class="h4 fw-bold mb-3">Corporate Partnership</h3>
+                        <p class="mb-4">Partner with us to create meaningful impact and support youth education.</p>
+                        <a href="corporate-partnership.html" class="btn btn-outline-primary w-100">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="support-card">
+                        <i class="fas fa-gift mb-4"></i>
+                        <h3 class="h4 fw-bold mb-3">In-Kind Donations</h3>
+                        <p class="mb-4">Donate equipment, materials, or services to support our programs.</p>
+                        <a href="in-kind-donations.html" class="btn btn-outline-primary w-100">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="support-card">
+                        <i class="fas fa-clock mb-4"></i>
+                        <h3 class="h4 fw-bold mb-3">Volunteer</h3>
+                        <p class="mb-4">Share your skills and time to help shape the future of our youth.</p>
+                        <a href="volunteer.html" class="btn btn-outline-primary w-100">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donor Recognition -->
+    <section class="donor-recognition py-5" style="background-color: var(--cetacean-blue);">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Our Supporters</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="donor-level">
+                        <h4 class="fw-bold mb-4">Platinum Donors</h4>
+                        <ul class="donor-list list-unstyled">
+                            <li class="mb-2">Tech Solutions Inc.</li>
+                            <li class="mb-2">Global Innovation Fund</li>
+                            <li class="mb-2">Future Foundation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="donor-level">
+                        <h4 class="fw-bold mb-4">Gold Donors</h4>
+                        <ul class="donor-list list-unstyled">
+                            <li class="mb-2">Digital Ventures</li>
+                            <li class="mb-2">Craft Industries</li>
+                            <li class="mb-2">Youth Impact Group</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="donor-level">
+                        <h4 class="fw-bold mb-4">Silver Donors</h4>
+                        <ul class="donor-list list-unstyled">
+                            <li class="mb-2">Creative Solutions Ltd</li>
+                            <li class="mb-2">Community Bank</li>
+                            <li class="mb-2">Local Tech Hub</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="donor-level">
+                        <h4 class="fw-bold mb-4">Bronze Donors</h4>
+                        <ul class="donor-list list-unstyled">
+                            <li class="mb-2">Startup Innovators</li>
+                            <li class="mb-2">Design Studio Co</li>
+                            <li class="mb-2">Craft Supply Co</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h4 class="fw-bold mb-4">Tech2Craft Youth Academy</h4>
+                    <p class="mb-4">Empowering youth through practical skills and creative education.</p>
+                    <div class="social-links d-flex gap-3">
+                        <a href="#" class="text-decoration-none"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="fw-bold mb-4">Quick Links</h4>
+                    <ul class="footer-links list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="programs.html" class="text-decoration-none">Programs</a></li>
+                        <li class="mb-2"><a href="donate.html" class="text-decoration-none">Support Us</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@tech2craft.org</p>
+                    <p>Phone: 0813912979</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Send Message</button>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2024 Tech2Craft Youth Academy. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">Contact Us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="contactForm" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                            <div class="invalid-feedback">Please enter your name</div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                            <div class="invalid-feedback">Please enter a valid email</div>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                            <div class="invalid-feedback">Please enter your message</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Form validation
+        (function () {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+            Array.prototype.slice.call(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+
+        // Handle donation amount buttons
+        document.querySelectorAll('.amount-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const form = this.closest('form');
+                const buttons = form.querySelectorAll('.amount-btn');
+                buttons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                
+                const input = form.querySelector('input[type="number"]');
+                input.value = this.dataset.amount;
+            });
+        });
+
+        // Format currency input
+        document.querySelectorAll('input[type="number"]').forEach(input => {
+            input.addEventListener('blur', function() {
+                if (this.value) {
+                    this.value = parseFloat(this.value).toFixed(2);
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

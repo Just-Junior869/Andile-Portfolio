@@ -1,0 +1,689 @@
+/* RANDS - Responsive And Neat Design System */
+:root {
+    /* Colors */
+    --dark-imperial-blue: #021373;
+    --oxford-blue: #020F59;
+    --cetacean-blue: #010B40;
+    --rich-black: #010626;
+    --vista-blue: #8491D9;
+    --white: #ffffff;
+
+    /* Spacing System (rem) */
+    --space-xxs: 0.25rem;  /* 4px */
+    --space-xs: 0.5rem;    /* 8px */
+    --space-sm: 1rem;      /* 16px */
+    --space-md: 1.5rem;    /* 24px */
+    --space-lg: 2rem;      /* 32px */
+    --space-xl: 3rem;      /* 48px */
+    --space-xxl: 4rem;     /* 64px */
+
+    /* Font Sizes (rem) */
+    --text-xs: 0.75rem;    /* 12px */
+    --text-sm: 0.875rem;   /* 14px */
+    --text-base: 1rem;     /* 16px */
+    --text-md: 1.125rem;   /* 18px */
+    --text-lg: 1.25rem;    /* 20px */
+    --text-xl: 1.5rem;     /* 24px */
+    --text-2xl: 2rem;      /* 32px */
+    --text-3xl: 2.5rem;    /* 40px */
+    --text-4xl: 3rem;      /* 48px */
+
+    /* Border Radius */
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 1rem;
+    --radius-full: 9999px;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+    /* Transitions */
+    --transition-fast: 150ms ease;
+    --transition-normal: 300ms ease;
+    --transition-slow: 500ms ease;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--oxford-blue);
+    color: var(--white);
+    padding-top: 4.75rem; /* 76px for fixed navbar */
+    font-size: var(--text-base);
+    line-height: 1.5;
+}
+
+/* Navigation */
+.navbar {
+    background-color: var(--dark-imperial-blue);
+    padding: var(--space-sm) 0;
+    transition: all var(--transition-normal);
+    box-shadow: var(--shadow-md);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: var(--text-xl);
+    color: var(--vista-blue);
+}
+
+.nav-link {
+    color: var(--white) !important;
+    font-weight: 500;
+    margin: 0 var(--space-xs);
+    transition: color var(--transition-normal);
+    padding: var(--space-xs) var(--space-sm);
+}
+
+.nav-link:hover {
+    color: var(--vista-blue) !important;
+}
+
+.donate-btn, .join-btn {
+    padding: var(--space-xs) var(--space-md);
+    border-radius: var(--radius-full);
+    transition: all var(--transition-normal);
+}
+
+.donate-btn {
+    background-color: var(--vista-blue);
+    border: none;
+}
+
+.join-btn {
+    background-color: transparent;
+    border: 2px solid var(--vista-blue);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--dark-imperial-blue), var(--rich-black));
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: var(--space-xxl);
+}
+
+.hero h1 {
+    font-size: var(--text-4xl);
+    font-weight: 700;
+    margin-bottom: var(--space-md);
+}
+
+.hero .lead {
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-lg);
+    color: var(--vista-blue);
+}
+
+/* Program Cards */
+.program-card {
+    background: var(--cetacean-blue);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    text-align: center;
+    transition: transform var(--transition-normal);
+    height: 100%;
+    box-shadow: var(--shadow-md);
+}
+
+.program-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.program-card i {
+    font-size: var(--text-4xl);
+    color: var(--vista-blue);
+    margin-bottom: var(--space-md);
+}
+
+.program-card h3 {
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.program-card p {
+    color: #b8b8b8;
+}
+
+/* Impact Section */
+.impact {
+    background-color: var(--cetacean-blue);
+}
+
+.impact-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: var(--text-3xl);
+    color: var(--vista-blue);
+    margin-bottom: var(--space-xs);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--rich-black);
+    color: var(--white);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--vista-blue);
+}
+
+.social-links a {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--vista-blue);
+}
+
+/* Contact Modal */
+.modal-content {
+    background-color: var(--cetacean-blue);
+    color: var(--white);
+}
+
+.modal-header {
+    border-bottom-color: var(--oxford-blue);
+}
+
+.form-control {
+    background-color: var(--rich-black);
+    border: 1px solid var(--oxford-blue);
+    color: var(--white);
+    padding: var(--space-sm);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-normal);
+}
+
+.form-control:focus {
+    background-color: var(--rich-black);
+    border-color: var(--vista-blue);
+    box-shadow: 0 0 0 0.25rem rgba(132, 145, 217, 0.25);
+}
+
+/* Buttons */
+.btn {
+    padding: var(--space-xs) var(--space-md);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-normal);
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: var(--vista-blue);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-imperial-blue);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-outline-light:hover {
+    background-color: var(--vista-blue);
+    border-color: var(--vista-blue);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    :root {
+        /* Adjust spacing for mobile */
+        --space-xxl: 3rem;
+        --space-xl: 2.5rem;
+        --space-lg: 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: var(--text-3xl);
+    }
+    
+    .impact-stats {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+    
+    .program-card {
+        margin-bottom: var(--space-md);
+    }
+
+    .category-buttons {
+        flex-direction: column;
+    }
+
+    .category-buttons .btn {
+        width: 100%;
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: var(--space-xs);
+}
+
+::-webkit-scrollbar-track {
+    background: var(--rich-black);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--vista-blue);
+    border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-imperial-blue);
+}
+
+/* Donation Page Styles */
+.donation-hero {
+    background: linear-gradient(135deg, var(--dark-imperial-blue), var(--rich-black));
+    padding-top: 120px;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+.donation-hero h1 {
+    color: var(--white);
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.impact-card {
+    background: var(--cetacean-blue);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.impact-card:hover {
+    transform: translateY(-10px);
+}
+
+.impact-card i {
+    font-size: 3rem;
+    color: var(--vista-blue);
+    margin-bottom: 1.5rem;
+}
+
+.impact-card h3 {
+    color: var(--vista-blue);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.donation-form-card {
+    background: var(--cetacean-blue);
+    border-radius: 15px;
+    padding: 2rem;
+    height: 100%;
+}
+
+.donation-form-card h3 {
+    color: var(--white);
+    margin-bottom: 1.5rem;
+}
+
+.amount-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.amount-btn {
+    border-color: var(--vista-blue);
+    color: var(--vista-blue);
+}
+
+.amount-btn:hover,
+.amount-btn.active {
+    background-color: var(--vista-blue);
+    border-color: var(--vista-blue);
+    color: var(--white);
+}
+
+.support-card {
+    background: var(--cetacean-blue);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.support-card:hover {
+    transform: translateY(-10px);
+}
+
+.support-card i {
+    font-size: 3rem;
+    color: var(--vista-blue);
+    margin-bottom: 1.5rem;
+}
+
+.support-card h3 {
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.donor-level {
+    background: var(--cetacean-blue);
+    border-radius: 15px;
+    padding: 2rem;
+    height: 100%;
+}
+
+.donor-level h4 {
+    color: var(--vista-blue);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.donor-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.donor-list li {
+    color: var(--white);
+    padding: 0.5rem 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.donor-list li:last-child {
+    border-bottom: none;
+}
+
+/* About Page Styles */
+.about-hero {
+    background: linear-gradient(135deg, var(--dark-imperial-blue), var(--rich-black));
+    padding-top: 120px;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+.about-hero h1 {
+    color: var(--white);
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.mission h2 {
+    color: var(--vista-blue);
+    margin-bottom: 1.5rem;
+}
+
+.alumni-card {
+    background: var(--cetacean-blue);
+    border-radius: 15px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.alumni-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.alumni-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.alumni-content {
+    padding: 2rem;
+}
+
+.alumni-content h3 {
+    color: var(--white);
+    margin-bottom: 0.5rem;
+}
+
+.alumni-content .program {
+    color: var(--vista-blue);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.alumni-content .achievement {
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.alumni-content .quote {
+    color: #b8b8b8;
+    font-style: italic;
+}
+
+.team-card {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.team-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid var(--vista-blue);
+}
+
+.team-card h4 {
+    color: var(--white);
+    margin-bottom: 0.5rem;
+}
+
+.team-card .position {
+    color: var(--vista-blue);
+    font-weight: 500;
+}
+
+/* Join Program Page Styles */
+.join-hero {
+    background: linear-gradient(135deg, var(--dark-imperial-blue), var(--rich-black));
+    padding-top: 120px;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+.join-hero h1 {
+    color: var(--white);
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.program-option-card {
+    background: var(--cetacean-blue);
+    border-radius: 15px;
+    padding: 2rem;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.program-option-card:hover {
+    transform: translateY(-10px);
+}
+
+.program-icon {
+    font-size: 3rem;
+    color: var(--vista-blue);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.program-option-card h3 {
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.program-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.program-features li {
+    color: var(--white);
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.program-features li:last-child {
+    border-bottom: none;
+}
+
+.program-details {
+    margin-bottom: 1.5rem;
+}
+
+.program-details p {
+    color: var(--vista-blue);
+    margin-bottom: 0.5rem;
+}
+
+.program-details i {
+    margin-right: 0.5rem;
+}
+
+.application-form-card {
+    background: var(--cetacean-blue);
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.form-label {
+    color: var(--white);
+}
+
+.form-control,
+.form-select {
+    background-color: var(--rich-black);
+    border: 1px solid var(--oxford-blue);
+    color: var(--white);
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: var(--rich-black);
+    border-color: var(--vista-blue);
+    color: var(--white);
+    box-shadow: 0 0 0 0.25rem rgba(132, 145, 217, 0.25);
+}
+
+.form-select option {
+    background-color: var(--rich-black);
+    color: var(--white);
+}
+
+.form-check-label {
+    color: var(--white);
+}
+
+.form-check-input:checked {
+    background-color: var(--vista-blue);
+    border-color: var(--vista-blue);
+}
+
+/* Success Message Styles */
+.success-message {
+    text-align: center;
+    padding: 3rem;
+}
+
+.success-message i {
+    font-size: 4rem;
+    color: var(--vista-blue);
+    margin-bottom: 1.5rem;
+}
+
+.success-message h4 {
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.success-message p {
+    color: var(--vista-blue);
+}
+
+/* Shop page styles */
+.shop-hero {
+    background-color: var(--oxford-blue);
+    padding-top: var(--space-xxl);
+    margin-bottom: var(--space-lg);
+}
+
+.category-buttons {
+    margin-bottom: var(--space-lg);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+    justify-content: center;
+}
+
+.category-buttons .btn {
+    margin: 0.5rem;
+}
+
+.product-item .card {
+    transition: transform var(--transition-normal);
+    border: none;
+    box-shadow: var(--shadow-md);
+    background: var(--cetacean-blue);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.product-item .card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.product-item .card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.product-item .price {
+    font-size: var(--text-lg);
+    font-weight: bold;
+    color: var(--vista-blue);
+    margin: var(--space-sm) 0;
+}
+
+.product-item .card-body {
+    padding: var(--space-md);
+} 

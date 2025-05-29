@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Program - Tech2Craft Youth Academy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation (same as other pages) -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Tech2Craft</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Programs</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="software-development.html">Software Development</a></li>
+                            <li><a class="dropdown-item" href="rug-crafting.html">Rug Crafting</a></li>
+                            <li><a class="dropdown-item" href="fashion.html">Fashion</a></li>
+                            <li><a class="dropdown-item" href="phone-repair.html">Phone Repair</a></li>
+                            <li><a class="dropdown-item" href="photography.html">Photography & Editing</a></li>
+                            <li><a class="dropdown-item" href="business.html">Business Management</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary donate-btn" href="donate.html">Donate</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-secondary join-btn active" href="join.html">Join Program</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Join Hero Section -->
+    <header class="join-hero py-5">
+        <div class="container">
+            <div class="row align-items-center min-vh-50">
+                <div class="col-lg-6">
+                    <h1>Start Your Journey</h1>
+                    <p class="lead">Join our innovative programs and transform your future with hands-on skills training and mentorship.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Program Selection -->
+    <section class="program-selection py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Choose Your Program</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="program-option-card">
+                        <div class="program-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Software Development</h3>
+                        <ul class="program-features">
+                            <li>Web Development</li>
+                            <li>Mobile App Development</li>
+                            <li>Programming Fundamentals</li>
+                            <li>Database Management</li>
+                        </ul>
+                        <div class="program-details">
+                            <p><i class="fas fa-clock"></i> 6 months</p>
+                            <p><i class="fas fa-calendar"></i> Next Intake: March 2024</p>
+                        </div>
+                        <button class="btn btn-primary w-100" onclick="selectProgram('Software Development')">Select Program</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="program-option-card">
+                        <div class="program-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>Rug Crafting</h3>
+                        <ul class="program-features">
+                            <li>Traditional Techniques</li>
+                            <li>Modern Design</li>
+                            <li>Material Selection</li>
+                            <li>Business Skills</li>
+                        </ul>
+                        <div class="program-details">
+                            <p><i class="fas fa-clock"></i> 4 months</p>
+                            <p><i class="fas fa-calendar"></i> Next Intake: April 2024</p>
+                        </div>
+                        <button class="btn btn-primary w-100" onclick="selectProgram('Rug Crafting')">Select Program</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="program-option-card">
+                        <div class="program-icon">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <h3>Fashion Design</h3>
+                        <ul class="program-features">
+                            <li>Pattern Making</li>
+                            <li>Garment Construction</li>
+                            <li>Fashion Illustration</li>
+                            <li>Sustainable Fashion</li>
+                        </ul>
+                        <div class="program-details">
+                            <p><i class="fas fa-clock"></i> 5 months</p>
+                            <p><i class="fas fa-calendar"></i> Next Intake: March 2024</p>
+                        </div>
+                        <button class="btn btn-primary w-100" onclick="selectProgram('Fashion Design')">Select Program</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 mt-4">
+                <div class="col-md-4">
+                    <div class="program-option-card">
+                        <div class="program-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Phone Repair</h3>
+                        <ul class="program-features">
+                            <li>Hardware Repair</li>
+                            <li>Software Troubleshooting</li>
+                            <li>Customer Service</li>
+                            <li>Business Operations</li>
+                        </ul>
+                        <div class="program-details">
+                            <p><i class="fas fa-clock"></i> 3 months</p>
+                            <p><i class="fas fa-calendar"></i> Next Intake: May 2024</p>
+                        </div>
+                        <button class="btn btn-primary w-100" onclick="selectProgram('Phone Repair')">Select Program</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="program-option-card">
+                        <div class="program-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h3>Photography & Editing</h3>
+                        <ul class="program-features">
+                            <li>Digital Photography</li>
+                            <li>Photo Editing</li>
+                            <li>Studio Lighting</li>
+                            <li>Portfolio Development</li>
+                        </ul>
+                        <div class="program-details">
+                            <p><i class="fas fa-clock"></i> 4 months</p>
+                            <p><i class="fas fa-calendar"></i> Next Intake: April 2024</p>
+                        </div>
+                        <button class="btn btn-primary w-100" onclick="selectProgram('Photography & Editing')">Select Program</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="program-option-card">
+                        <div class="program-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Business Management</h3>
+                        <ul class="program-features">
+                            <li>Entrepreneurship</li>
+                            <li>Marketing</li>
+                            <li>Financial Management</li>
+                            <li>Business Planning</li>
+                        </ul>
+                        <div class="program-details">
+                            <p><i class="fas fa-clock"></i> 5 months</p>
+                            <p><i class="fas fa-calendar"></i> Next Intake: March 2024</p>
+                        </div>
+                        <button class="btn btn-primary w-100" onclick="selectProgram('Business Management')">Select Program</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form -->
+    <section class="application-form py-5" style="background-color: var(--cetacean-blue);">
+        <div class="container">
+            <h2 class="text-center mb-5">Application Form</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form id="applicationForm" class="application-form-card">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="selectedProgram" class="form-label">Selected Program</label>
+                            <input type="text" class="form-control" id="selectedProgram" readonly>
+                        </div>
+                        <div class="mb-3">
+                            <label for="education" class="form-label">Highest Education Level</label>
+                            <select class="form-select" id="education" required>
+                                <option value="">Select Education Level</option>
+                                <option value="high-school">High School</option>
+                                <option value="diploma">Diploma</option>
+                                <option value="bachelors">Bachelor's Degree</option>
+                                <option value="masters">Master's Degree</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="experience" class="form-label">Relevant Experience</label>
+                            <textarea class="form-control" id="experience" rows="4"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="motivation" class="form-label">Why do you want to join this program?</label>
+                            <textarea class="form-control" id="motivation" rows="4" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="terms" required>
+                                <label class="form-check-label" for="terms">
+                                    I agree to the terms and conditions
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit Application</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as other pages) -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Tech2Craft Youth Academy</h4>
+                    <p>Empowering youth through practical skills and creative education.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="donate.html">Support Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@tech2craft.org</p>
+                    <p>Phone: 0813912979</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Send Message</button>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2024 Tech2Craft Youth Academy. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal (same as other pages) -->
+    <div class="modal fade" id="contactModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contact Us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Program selection handling
+        function selectProgram(programName) {
+            document.getElementById('selectedProgram').value = programName;
+            document.querySelector('.application-form').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Application form handling
+        document.getElementById('applicationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Here you would typically send the form data to your backend
+            const formData = new FormData(this);
+            console.log('Application submitted:', Object.fromEntries(formData));
+            
+            // Show success message
+            this.innerHTML = `
+                <div class="text-center">
+                    <i class="fas fa-check-circle text-success" style="font-size: 3rem;"></i>
+                    <h4 class="mt-3">Application Submitted Successfully!</h4>
+                    <p>Thank you for applying to Tech2Craft Youth Academy. We will review your application and contact you soon.</p>
+                </div>
+            `;
+        });
+    </script>
+</body>
+</html> 
